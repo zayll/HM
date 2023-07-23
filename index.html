@@ -60,8 +60,8 @@ body, html {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 20px;
-  font-size: 12px;
+  padding: 14px 16px;
+  font-size: 10px;
   width: 25%;
 }
 
@@ -93,7 +93,7 @@ function openPage(pageName,elmnt,color) {
     tabcontent[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablink");
-  for (i = 10; i < tablinks.length; i++) {
+  for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
   document.getElementById(pageName).style.display = "block";
